@@ -1,0 +1,261 @@
+:root{
+  --color-primary:#2584ff;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-headings: #1b0760;
+  --color-body: #918ca4;
+
+}
+
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+
+/* Typography */
+html{
+  font-size: 62.5%;
+
+}
+
+body{
+  font-family: Inter,  Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  line-height: 0.5;
+  color: var(--color-body);
+  text-align: center;
+}
+
+h2, p {
+  color: var(--color-headings);
+}
+h3{
+  font-size: 3rem;
+}
+
+#scoreDisplay {
+  color: var(--color-headings);
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  left: 30%;
+}  
+
+
+#message{
+  width: 750px ;
+  height: 400px;
+  border-radius:  5px;
+  background-color: rgba(45, 34, 34, 0.7);
+  display: none;
+  position: absolute;
+  left: 31%;
+  margin-top: 50px;
+
+}
+#message p{
+  color: #ff3400;
+}
+.message-title {
+margin-top: 4rem;
+font-size: 4rem;
+color: #ff3400;
+}
+
+.score-text, .lives-text {
+ margin-top: 2rem;
+ color: #ff3400;
+}
+  
+@media screen and (min-width: 1024px) {
+  body{
+     
+      font-size: 1.8rem;
+  }
+
+h2{
+  font-size: 5rem;
+  
+}
+
+}
+
+
+
+/* Images */
+.liveIcon {
+  width: 4.5rem;
+  height: 3rem;
+  padding-left: 2rem;
+  display: inline-flex;
+  position: relative;
+  left: 30rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .liveIcon{
+     padding-left: 1.5rem;
+  }
+}
+
+
+/* Bottuns */
+
+.game-buttons {
+  display: flex;
+  gap: 10px;
+  display: block;
+  margin-top: 15px;
+}
+
+button {
+  width: 200px;
+  height: 30px;
+  cursor: pointer;
+  color:var(--color-headings);
+  border: 2px solid var(--color-headings);
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: var(--color-body);
+}
+
+
+/* Lists */
+
+.instructions{
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+ul{
+display: inline-flex;
+  list-style: none;
+   padding-left: 0;
+   color: var(--color-headings);
+   font-size: bold;
+}
+
+.resetme{ 
+margin-left: 3rem;
+font-weight: bold;
+}
+
+.nose{
+padding: 2rem;
+}
+.left_wrist{
+padding: 1rem;
+}
+.right_wrist{
+padding: 1rem;
+}
+.left_hip{
+padding: 1rem;
+}
+.right_hip{
+padding: 1rem;
+}
+.left_ankle{
+padding: 1rem;
+}
+.right_ankle{
+padding: 1rem;
+}
+
+.red{
+  color: red;
+}
+
+.green{
+  color: green;
+} 
+
+
+.blue{
+  color: blue;
+} 
+.orange{
+  color: orange;
+}
+
+.turquoise{
+  color: turquoise;
+}
+.yellow{
+  color: yellow;
+}
+
+
+#canvas-container {
+  margin: 1rem;
+  width: 800px; 
+  height: 500px;
+  display: inline-block;
+}
+
+
+
+
+
+/* loading bar */
+
+.loading-container {
+  width: 200px;
+  height: 20px;
+  background-color: var(--color-body);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  display: inline-flex;
+  margin-bottom: 10px;
+}
+
+.loading-bar {
+  height: 100%;
+  background-color: var(--color-headings);
+  width: 0%; /* Starts empty */
+  transition: width 0.1s ease-out;
+}
+
+
+/* table */
+
+.results-table {
+  display: table;
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 500px;
+}
+
+.table-row {
+  display: table-row;
+}
+
+.table-cell {
+  display: table-cell;
+  color: red;
+  padding: 10px;
+  text-align: center;
+}
+
+.table-header {
+  font-weight: bold;
+}
+
+
+/* .message-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.score-text, .lives-text {
+  font-size: 18px;
+  text-align: center;
+  margin: 5px 0;
+} */

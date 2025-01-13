@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="libraries/ml5.min.js"></script>
+
+    <script src="Camera.js"></script>
+    <script src="Sketch.js"></script>
+    
+    <script src="Sands.js"></script></head>
+    <script src="Player.js"></script></head>
+    
+    <body>
+      <div class="instructions">
+        <h2>
+          How to play 
+        </h2>
+        <p>
+          Move your body part based on the changing of the line's color 
+        </p>
+        <ul>
+          <li class="resetme" id="nose">
+            Nose --- <span class="red"> Red</span>
+          </li>
+          <li class="resetme" id = "left_wrist">
+            Left Wrist --- <span class="green"> Green</span>
+          </li>
+          <li class="resetme" id = "right_wrist">
+            Right Wrist --- <span class="blue"> Blue</span>
+          </li>
+          <li class="resetme" id="left_hip">
+            Left Hip --- <span class="orange"> Orange</span>
+            
+          </li>
+          <li class="resetme"  id="right_hip">
+            Right Hip --- <span class="orange"> Orange</span>
+            
+          </li>
+          
+          <li class="resetme" id="left_ankle">
+            Left Ankle --- <span class="turquoise"> Turquoise</span>
+            
+          </li>
+          <li class="resetme" id="right_ankle">
+            Right Ankle --- <span class="yellow"> Yellow</span>
+            
+          </li>
+        </ul>
+      </div>
+    
+      
+      <div id="canvas-container">
+        <div class="gameheader">
+          <ul>
+            <li id="scoreDisplay">Score: 0</li>
+            <li id="lives-container">
+              <img  id="liveIcon" src="" alt=""></li>
+          </ul>
+        </div>
+        <div class="loading-container">
+          <div class="loading-bar" id="loading-bar"></div>
+        </div>
+
+        <div id="message">
+          <h3 class="message-title"> ${this.player.getScore()}</h3>
+
+          <p class="score-text"></p>
+          <p class="lives-text"></p>
+          <p class="noseMove"></p>
+              
+          <p class="left_wristMove"> </p>
+          <p class="right_wristMove"></p>
+             
+          <p class="left_hipMove"></p>
+          <p class="right_ankle"></p>
+          <p class="leftt_ankle"></p>
+            
+
+        </div>
+
+
+      </div>
+      <div class="game-buttons">
+        <button id="newgame">New Game</button>
+        <button id="pause">Pause</button>
+      </div>
+
+    
+    <script src="GameManager.js"></script>
+  </body>
+  </html>
+  
